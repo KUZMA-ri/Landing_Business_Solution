@@ -32,21 +32,21 @@
 }
 
 @include breakpoint(lg) {
-  .col-md-6 {
+  .col-lg-6 {
     width: calc(100% / 12 * 6 - var(--gutter) * 2);
     margin: 0 var(--gutter);
   }
 }
 
 @include breakpoint(md) {
-  .col-sm-12 {
+  .col-md-12 {
     width: calc(100% / 12 * 12 - var(--gutter) * 2);
     margin: 0 var(--gutter);
   }
 }
 
 @include breakpoint(sm) {
-  .col-xs-12 {
+  .col-sm-12 {
     width: calc(100% / 12 * 12 - var(--gutter) * 2);
     margin: 0 var(--gutter);
   }

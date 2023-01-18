@@ -81,35 +81,9 @@
     }
 
     &__btn {
-        position: relative;
-        z-index: 2;
         margin-bottom: 90px;
-        border: none;
-        transition: 0.5s;
-        font-family: var(--font-Jacarta);
-        font-weight: 700;
-        font-size: var(--fs-16);
-        line-height: 140%;
-        letter-spacing: 0.18em;
-        background-color: inherit;
-        color: var(--text-light);
-
         
-        &:hover {
-            transform: scale(1.2);
-            text-decoration: underline;
-        }
-
         &::before {
-            content: '';
-            position: absolute;
-            width: 60px;
-            height: 60px;
-            bottom: -70%;
-            right: 70%;
-            z-index: -1;
-            border-radius: 50%;
-            animation: animation1 3s ease-in-out 0s normal none;
             background-color:var(--bg-orange);
         }
     }

@@ -1,0 +1,29 @@
+.section-head {
+
+    &__title {
+        font-family: var(--font-Poppins);
+        font-weight: 600;
+        font-size: var(--fs-40);
+        line-height: 135%;
+        color: var(--text-light);
+        margin-bottom: 32px;
+    }
+    
+    &__subtitle {
+        font-family: var(--font-Jacarta);
+        font-weight: 600;
+        font-size: var(--fs-14);
+        line-height: 160%;
+        letter-spacing: 0.15em;
+        color: var(--text-darkness-gray);
+        margin-bottom: 6px;
+    }
+
+    &__text {
+        font-family: var(--font-Jacarta);
+        font-weight: 500;
+        font-size: var(--fs-16);
+        line-height: 144%;
+        color: var(--text-light-gray);
+    }
+}

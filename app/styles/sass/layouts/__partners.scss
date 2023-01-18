@@ -1,0 +1,49 @@
+.partners {
+    position: relative;
+    padding: 15px 0 15px 0;
+    color: var(--text-darkness-gray);
+
+    &__shape {
+        position: absolute;
+        left: 6%;
+    }
+
+    &__wrapper {
+        display: flex;
+        padding-top: 160px;
+    }
+
+    &__text {
+        position: relative;
+        font-family: var(--font-Jacarta);
+        font-weight: 700;
+        font-size: var(--fs-16);
+        line-height: 160%;
+        letter-spacing: 0.15em;
+        width: 30%;
+        margin-right: 20px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            height: 3px;
+            width: 38px;
+            left: -13%;
+            bottom: 52%;
+            transform: rotate(90deg);
+            background-color: var(--bg-orange);
+        }
+    }
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+    }
+    &__icon {
+        &:hover {
+            fill: var(--bg-orange);
+            stroke: var(--bg-orange);
+        }
+    }
+}

@@ -1,0 +1,112 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-height: 150px;
+    padding: 15px 0;
+    z-index: 100;
+    font-family: var(--font-Poppins);
+
+    &__content {
+        @include flexible();
+        justify-content: space-between;
+    }
+
+    &__logo-img {
+        width: 208px;
+        height: 40px;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item  {
+        position: relative;
+        display: inline-block;
+
+        &:hover > ul {
+            display: block;
+        }
+    }
+
+    &__link {
+        margin-left: 25px;
+        margin-right: 25px;
+        color: var(--text-light);
+
+        &:hover {
+            color: var(--text-orange);
+        }
+
+        &::after {
+            content: '>';
+            position: absolute;
+            margin-left: 5px;
+            transform: rotate(90deg);            
+        }
+    }
+
+    &__link_active {
+        color: var(--text-orange);
+    }
+
+    &__submenu-list {
+        width: 100%;
+        position: absolute;
+        z-index: 1000;
+        display: none;
+        transition: all 0.5s;
+        background-color: inherit;
+        color: var(--text-light);
+        padding: 10px;
+        text-align: center;
+    }
+
+    &__submenu-item {
+        display: block;
+        &:hover {
+            background-color: var(--bg-orange);
+            border-radius: 15px;
+        }
+    }
+
+    &__submenu-link {
+        &:hover {
+            color: var(--text-darkness-gray);
+        }
+    }
+
+    &__icons {
+        display: flex;
+    }
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+        transition: all 0.5s;
+
+        &:nth-child(1) {
+            margin-right: 30px;
+        }
+
+        &:hover {
+            transform: scale(1.3 );
+        }
+    }
+
+    &__burger-menu {
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 50%;
+        padding: 5px;
+    }
+
+    &__burger-img {
+        width: 20px;
+    }
+
+    &_has-bg {
+        background: var(--bg-dark);
+    }
+}

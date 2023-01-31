@@ -1,0 +1,110 @@
+.value {
+    padding: 75px 0;
+
+    &__container {
+        display: flex;
+        gap: 80px;
+    }
+
+    &__left  {
+        width: 50%;
+        padding: 30px 0;
+    }
+
+    &__right {
+        width: 50%;
+    }
+
+    &__complete {
+        display: flex;
+        padding: 5px;
+    }
+
+    &__ideas {
+        display: flex;
+        padding: 5px;
+    }
+
+    &__count {
+        margin-right: 50px;
+        font-family: var(--font-Jacarta);
+        font-weight: 700;
+        font-size: var(--fs-60);
+        line-height: 135%;
+    }
+
+    &__title-desc {
+        font-family: var(--font-Jacarta);
+        font-weight: 700;
+        font-size: var(--fs-30);
+        line-height: 135%;
+        margin-bottom: 23px;
+    }
+
+    &__text-desc {
+        font-family: var(--font-Jacarta);
+        font-weight: 500;
+        font-size: var(--fs-16);
+        line-height: 140%;
+        color: var(--bg-light-gray);
+        margin-bottom: 50px;
+    }
+
+    &__head-text {
+        margin-bottom: 60px;
+    }
+    
+    &__more-wrapper {
+        display: flex;
+    }
+
+    &__video-link {
+        display: flex;
+    }
+
+    &__more-info {
+        margin-right: 50px;
+    }
+
+    &__play {
+        margin-right: 15px;
+    }
+
+    &__watch {
+        position: relative;
+        color: var(--text-light);
+        text-transform: uppercase;
+        font-family: var(--font-Jacarta);
+        font-weight: 700;
+        font-size: var(--fs-18);
+        line-height: 140%;
+        letter-spacing: 0.18em;
+        margin-left: 15px;
+        transition: all 0.5s;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            left: -41%;
+            bottom: -50%;
+            z-index: -1;
+            border-radius: 50%;
+            background-color: var(--bg-orange);
+        }
+    }
+}
+
+.value__info-link {
+}
+.view__link {
+}
+.value__video-link {
+}
+.value__watch {
+}

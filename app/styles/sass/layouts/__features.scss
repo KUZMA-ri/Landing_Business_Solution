@@ -15,6 +15,24 @@
         max-width: 40%;
     }
 
+    &__col {
+        &:nth-child(2) {
+            margin-top: 50px;
+
+            @include breakpoint(lg) {
+                margin-top: 0;
+            }
+        }
+
+        &:nth-child(3) {
+            margin-top: 100px;
+
+            @include breakpoint(lg) {
+                margin-top: 0;
+            }
+        }
+    }
+
     &__text {
         margin-bottom: 50px;
     }
@@ -82,15 +100,5 @@
         &:hover {
             border-bottom: 1px solid var(--bg-orange);
         }
-
-        &:nth-child(2) {
-            margin-top: 50px;
-        }
-
-        &:nth-child(3) {
-            margin-top: 100px;
-        }
-    }
-
-    
+    }   
 }

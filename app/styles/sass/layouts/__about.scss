@@ -1,0 +1,119 @@
+.about {
+    &__container {
+        display: flex;
+    }
+
+    &__left {
+        position: relative;
+        width: 60%;
+    }
+
+    &__right {
+        position: relative;
+        width: 40%;
+        padding-top: 50px;
+    }
+
+    &__shape-bg {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    &__video {
+        position: absolute;
+        bottom: 5%;
+        right: 5%;
+        transition: 0.3s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__video a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__bg-play {
+        border: 8px solid var(--bg-dark);
+    }
+
+    &__play {
+        position: absolute;
+        background: var(--bg-orange);
+        padding: 35px;
+        border-radius: 50%;
+    }
+
+    &__shape {
+        position: absolute;
+        right: 6%;
+        top: 6%;
+        z-index: -1;
+    }
+
+    &__circle {
+        position: absolute;
+        bottom: 8%;
+        left: 20%;
+        z-index: -1;
+    }
+
+    &__list {
+        display: inline-block;
+        font-family: var(--font-Jacarta);
+        font-weight: 600;
+        font-size: var(--fs-16);
+        line-height: 140%;
+        color: var(--text-lighness-gray);
+        margin-bottom: 46px;
+    }
+
+    &__item {
+        display: flex;
+        margin-bottom: 13px;
+
+        &:before {
+            content: url('../../../images/dist/about/Vector.svg');
+            margin-right: 15px;
+            padding-top: 3px;
+        }
+    }
+
+    &__text {
+        margin-bottom: 38px;
+    }
+
+    &__results {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__sales,
+    &__engagement,
+    &about__support {
+        padding: 5px;
+    }
+
+    &__percent {
+        position: relative;
+        font-family: var(--font-Jacarta);
+        font-weight: 600;
+        font-size: var(--fs-35);
+        line-height: 140%;
+        text-align: center;
+    }
+
+    &__result-desc {
+        font-family: var(--font-Jacarta);
+        font-weight: 500;
+        font-size: var(--fs-14);
+        line-height: 140%;
+        color: var(--text-darkness-gray);
+    }
+}
+
